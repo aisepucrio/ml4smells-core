@@ -1,16 +1,16 @@
 # Code-smell-analysis
 
-The application serves as a front-end interface, allowing users to submit code for processing and extraction. It also provides the option to specify additional details, such as the prompt that will help the SLM interpret the context or intended query, the selection of the SLM to be used during processing, and the definition of the extraction type, whether for classes or methods. Furthermore, the application informs the user when processing begins, ensuring clarity and ease of use throughout the execution of the task. [code-smells-analysis]("/code-smell-analysis/readme.md")
+The application serves as a front-end interface, allowing users to submit code for processing and extraction. It also provides the option to specify additional details, such as the prompt that will help the SLM interpret the context or intended query, the selection of the SLM to be used during processing, and the definition of the extraction type, whether for classes or methods. Furthermore, the application informs the user when processing begins, ensuring clarity and ease of use throughout the execution of the task. [code-smells-analysis](/code-smell-analysis/readme.md)
 
 
 # Ml4smells-code-extractor.API
 
-The application operates within an anti-corruption layer (ACL), acting as an event producer. Its main responsibility is to receive requests from the frontend service, process them, and extract relevant information, such as the classes or methods present in the submitted files. This functionality enables the identification of classes and methods, along with their respective properties. To achieve this, the application uses the Abstract Syntax Tree (AST) technique, which provides a structural representation of the input code. After extracting the information, the application sends an event to the router, allowing the ml4smells-llm-integrator service to consume it. [ml4smells-code-extractor.API]("/ml4smells-code-extractor.API/readme.md")
+The application operates within an anti-corruption layer (ACL), acting as an event producer. Its main responsibility is to receive requests from the frontend service, process them, and extract relevant information, such as the classes or methods present in the submitted files. This functionality enables the identification of classes and methods, along with their respective properties. To achieve this, the application uses the Abstract Syntax Tree (AST) technique, which provides a structural representation of the input code. After extracting the information, the application sends an event to the router, allowing the ml4smells-llm-integrator service to consume it. [ml4smells-code-extractor.API](/ml4smells-code-extractor.API/README.md)
 
 
 # Ml4smells-llm-integrator
 
-The main objective of this application is to act as an event consumer, receiving messages from the router and processing them according to the attributes defined in the event payload. To perform this processing, the application interacts with SLMs, either through an instance of Ollama or via RESTful protocols. After the processing is completed and the operational data is obtained, the results are stored in a relational database, ensuring their availability for data analysis and future research. [ml4smells-llm-integrator]("/ml4smells-llm-integrator/readme.md")
+The main objective of this application is to act as an event consumer, receiving messages from the router and processing them according to the attributes defined in the event payload. To perform this processing, the application interacts with SLMs, either through an instance of Ollama or via RESTful protocols. After the processing is completed and the operational data is obtained, the results are stored in a relational database, ensuring their availability for data analysis and future research. [ml4smells-llm-integrator](/ml4smells-llm-integrator/README.md)
 
 
 # Machine Learning 
