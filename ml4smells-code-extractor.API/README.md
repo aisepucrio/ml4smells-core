@@ -32,5 +32,13 @@ This application was developed to extract code structures, such as classes and m
 * 1 - Make sure you are in the `app` folder
 * 2 - Run: `pip install -r requirements.txt`
 * 3 - Create: `.env`
-* 4 - Run: `fastapi dev main.py`
-* 5 - Host: `http://localhost:8000/docs`
+* 4 - Set up RabbitMQ according to the `.env` file
+* 5 - Set up [RabbitMQ](https://www.rabbitmq.com/docs/download) according to the `.env` file
+* 6 - Run: `fastapi dev main.py`
+* 7 - Host: `http://localhost:8000/docs`
+
+
+# Dependencies
+
+* RabbitMq
+* ml4smells-llm-integrator
