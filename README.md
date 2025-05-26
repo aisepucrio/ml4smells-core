@@ -63,7 +63,8 @@ This application uses deep learning techniques to improve the classification of 
 
 # Artifacts
 
-This repository provides the artifacts associated with the paper, including code, datasets, and models used in the experiments, with the aim of supporting result reproducibility and fostering further research. [Zenodo](https://zenodo.org/records/15514693)
+
+This repository provides the artifacts associated with the paper, including the code used to extract the algorithms analyzed by PySmell, validating their correctness; the datasets containing the classified code samples; and the models employed in the experiments, with the aim of supporting result reproducibility and fostering further research. [Zenodo](https://zenodo.org/records/15514693)
 
 
 
