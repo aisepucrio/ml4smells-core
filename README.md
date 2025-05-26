@@ -59,9 +59,19 @@ This application uses deep learning techniques to improve the classification of 
 | 3  | Gated Recurrent Unit                    | GRU          | Simplified RNN variant, often with performance comparable to LSTM.          |
 | 4  | AutoKeras                               | -            | Automated framework for designing and tuning deep learning models.          |
 
+---
 
 
-# Artifacts
+## Guide to the Files and Their Execution
+
+This section provides an overview of the files used in this study, as well as instructions on how to use them effectively. The repository is organized into different folders containing datasets, scripts for code extraction and analysis, trained machine learning models, and supporting resources for the execution of the described experiments.
+
+Each subsection explains the purpose of the files, how they contribute to the workflow, and provides step-by-step guidance on how to run the scripts or use the data. Whether you are exploring the dataset, replicating model training, performing code extraction, or analyzing the results related to explainability, the instructions provided here will help you understand and use each component of the repository. `docs/experiments/study_processes.md`
+
+
+
+
+## Artifacts
 
 
 This repository provides the artifacts associated with the paper, including the code used to extract the algorithms analyzed by PySmell, validating their correctness; the datasets containing the classified code samples; and the models employed in the experiments, with the aim of supporting result reproducibility and fostering further research. [Zenodo](https://zenodo.org/records/15514693)
