@@ -20,6 +20,7 @@ This application is designed to seamlessly integrate with Language Learning Mode
 │   ├──📁 src
 │   |   ├──📁 app
 │   |   |   ├──📁 application
+│   |   |   ├──📁 domain
 │   |   |   └──📁 infrastucture
 │   ├──📄 changelog
 │   ├──📄 .gitignore
