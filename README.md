@@ -13,6 +13,11 @@ The application operates within an anti-corruption layer (ACL), acting as an eve
 The main objective of this application is to act as an event consumer, receiving messages from the router and processing them according to the attributes defined in the event payload. To perform this processing, the application interacts with SLMs, either through an instance of Ollama or via RESTful protocols. After the processing is completed and the operational data is obtained, the results are stored in a relational database, ensuring their availability for data analysis and future research.
 
 
+# Contracts
+
+This project adopts a distributed architecture, in which each service is responsible for a specific part of the system and, consequently, uses contracts to establish communication between the microservices. All contracts are organized in the folder: `docs/contracts`
+
+
 # Machine Learning 
 
 This application uses machine learning techniques to enhance the classification of code smells by analyzing multiple project-related metrics. The models were developed and executed using the PyCaret library, leveraging a set of 15 widely adopted ML algorithms commonly used in defect and code smell classification tasks.
