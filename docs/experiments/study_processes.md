@@ -15,7 +15,7 @@ This folder contains code extraction files using an AST-based approach, aimed at
 
 **Steps:**
 1. Use the `code.py` or `code2.py` script.
-2. Download the project (Boto, NLTK, Django, etc.) from which you want to extract the codes that exist in the PySmell reference file.
+2. Download the project (Boto, NLTK, Django, etc.) from which you want to extract the codes that exist in the PySmell [reference](https://github.com/chenzhifei731/Pysmell/tree/master/pysmell/detection/example%20repository/definite%20negative) file.
 3. In the PySmell reference files (`long_method.csv` or `long_parameter_list.csv`), select the lines you wish to analyze.
 4. Paste the selected lines into the `smell.csv` file.
 5. Replace the `file` column with the directory of the respective project downloaded in step 2.
