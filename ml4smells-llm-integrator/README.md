@@ -31,10 +31,9 @@ This application is designed to seamlessly integrate with Language Learning Mode
 
 * 1 - Make sure you are in the `app` folder
 * 2 - Run `pip install -r requirements.txt`
-* 3 - Create: `.env`
-* 4 - Set up [RabbitMQ](https://www.rabbitmq.com/docs/download) according to the `.env` file
-* 5 - Run Ollama with the models you intend to use
-* 6 - Run `python main.py`
+* 3 - Set up [RabbitMQ](https://www.rabbitmq.com/docs/download) according to the `.env` file
+* 4 - Run Ollama with the models you intend to use
+* 5 - Run `python main.py`
 
 
 # Dependencies 
