@@ -31,10 +31,9 @@ This application was developed to extract code structures, such as classes and m
 
 * 1 - Make sure you are in the `app` folder
 * 2 - Run: `pip install -r requirements.txt`
-* 3 - Create: `.env`
-* 4 - Set up [RabbitMQ](https://www.rabbitmq.com/docs/download) according to the `.env` file
-* 5 - Run: `fastapi dev main.py`
-* 6 - Host: `http://localhost:8000/docs`
+* 3 - Set up [RabbitMQ](https://www.rabbitmq.com/docs/download) according to the `.env` file
+* 4 - Run: `fastapi dev main.py`
+* 5 - Host: `http://localhost:8000/docs`
 
 
 # Dependencies
