@@ -9,15 +9,106 @@
 
 The application serves as a front-end interface, allowing users to submit code for processing and extraction. It also provides the option to specify additional details, such as the prompt that will help the SLM interpret the context or intended query, the selection of the SLM to be used during processing, and the definition of the extraction type, whether for classes or methods. Furthermore, the application informs the user when processing begins, ensuring clarity and ease of use throughout the execution of the task.
 
+## Built with
+* HTML
+* CSS
+* JavaScript
+
+## How to run?
+
+* 1 - Open ```index.html``` in your browser.
+
+
+## Dependencies
+
+* ml4smells-code-extractor.API
+
+----------
+</br>
 
 # Ml4smells-code-extractor.API
 
 The application operates within an anti-corruption layer (ACL), acting as an event producer. Its main responsibility is to receive requests from the frontend service, process them, and extract relevant information, such as the classes or methods present in the submitted files. This functionality enables the identification of classes and methods, along with their respective properties. To achieve this, the application uses the Abstract Syntax Tree (AST) technique, which provides a structural representation of the input code. After extracting the information, the application sends an event to the router, allowing the ml4smells-llm-integrator service to consume it.
 
 
+## Built with
+* [Python 3.10](https://www.python.org/downloads/release/python-3100/)
+* [RabbitMq](https://www.rabbitmq.com/)
+
+
+## Project Structure
+
+```
+├──📁 ml4smells-code-extractor.API
+│   ├──📁 docs
+│   ├──📁 src
+│   |   ├──📁 app
+│   |   |   ├──📁 application
+│   |   |   └──📁 infrastucture
+│   ├──📄 changelog
+│   ├──📄 .gitignore
+
+```
+
+## How to run?
+
+* 1 - Make sure you are in the `app` folder
+* 2 - Run: `pip install -r requirements.txt`
+* 3 - Set up [RabbitMQ](https://www.rabbitmq.com/docs/download) according to the `.env` file
+* 4 - Run: `fastapi dev main.py`
+* 5 - Host: `http://localhost:8000/docs`
+
+
+## Dependencies
+
+* RabbitMq
+* ml4smells-llm-integrator
+
+----------
+</br>
+
 # Ml4smells-llm-integrator
 
 The main objective of this application is to act as an event consumer, receiving messages from the router and processing them according to the attributes defined in the event payload. To perform this processing, the application interacts with SLMs, either through an instance of Ollama or via RESTful protocols. After the processing is completed and the operational data is obtained, the results are stored in a relational database, ensuring their availability for data analysis and future research.
+
+
+## Built with
+* [Python 3.10](https://www.python.org/downloads/release/python-3100/)
+* [Ollama](https://ollama.com/)
+* [RabbitMq](https://www.rabbitmq.com/)
+
+
+## Project Structure
+
+```
+├──📁 ml4smells-llm-integrator
+│   ├──📁 docs
+│   ├──📁 src
+│   |   ├──📁 app
+│   |   |   ├──📁 application
+│   |   |   ├──📁 domain
+│   |   |   └──📁 infrastucture
+│   ├──📄 changelog
+│   ├──📄 .gitignore
+
+```
+
+## How to run?
+
+* 1 - Make sure you are in the `app` folder
+* 2 - Run `pip install -r requirements.txt`
+* 3 - Set up [RabbitMQ](https://www.rabbitmq.com/docs/download) according to the `.env` file
+* 4 - Run Ollama with the models you intend to use
+* 5 - Run `python main.py`
+
+
+## Dependencies 
+
+* RabbitMq
+* Ollama
+
+----------
+</br>
 
 
 # Contracts
