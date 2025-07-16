@@ -2,7 +2,6 @@
     <h1>Code Smell Classification in Python: </br> Are Small Language Models Up to the Task?</h2>
 </div>
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15514693.svg)](https://doi.org/10.5281/zenodo.15514693)
 
 
 # Code-smell-analysis
@@ -179,3 +178,9 @@ This repository provides the artifacts associated with the paper, including the 
 # Article
 
 [📄 Link to the Article]()
+
+
+# License
+
+This project is licensed under the MIT License.
+Feel free to use, modify, and distribute it as permitted under the terms of this license.
