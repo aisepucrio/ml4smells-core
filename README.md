@@ -2,7 +2,7 @@
     <h1>Code Smell Classification in Python: </br> Are Small Language Models Up to the Task?</h2>
 </div>
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16013662.svg)](https://doi.org/10.5281/zenodo.16013662)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16014611.svg)](https://doi.org/10.5281/zenodo.16014611)
 
 The pre-print for the paper is available [here](paper/code_smell_slm_python_2025.pdf)
 # Code-smell-analysis
@@ -172,7 +172,7 @@ Each subsection explains the purpose of the files, how they contribute to the wo
 # Artifacts
 
 
-This repository provides the artifacts associated with the paper, including the code used to extract the algorithms analyzed by PySmell, validating their correctness; the datasets containing the classified code samples; and the models employed in the experiments, with the aim of supporting result reproducibility and fostering further research. [Zenodo](https://zenodo.org/records/15514693)
+This repository provides the artifacts associated with the paper, including the code used to extract the algorithms analyzed by PySmell, validating their correctness; the datasets containing the classified code samples; and the models employed in the experiments, with the aim of supporting result reproducibility and fostering further research. [Zenodo](https://zenodo.org/records/16014611)
 
 
 
