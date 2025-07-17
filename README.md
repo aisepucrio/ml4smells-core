@@ -2,8 +2,9 @@
     <h1>Code Smell Classification in Python: </br> Are Small Language Models Up to the Task?</h2>
 </div>
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16013662.svg)](https://doi.org/10.5281/zenodo.16013662)
 
-
+The pre-print for the paper is available [here](paper/code_smell_slm_python_2025.pdf)
 # Code-smell-analysis
 
 The application serves as a front-end interface, allowing users to submit code for processing and extraction. It also provides the option to specify additional details, such as the prompt that will help the SLM interpret the context or intended query, the selection of the SLM to be used during processing, and the definition of the extraction type, whether for classes or methods. Furthermore, the application informs the user when processing begins, ensuring clarity and ease of use throughout the execution of the task.
