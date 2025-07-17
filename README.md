@@ -97,7 +97,7 @@ The main objective of this application is to act as an event consumer, receiving
 * 1 - Make sure you are in the `app` folder
 * 2 - Run `pip install -r requirements.txt`
 * 3 - Set up [RabbitMQ](https://www.rabbitmq.com/docs/download) according to the `.env` file
-* 4 - Run Ollama with the models you intend to use
+* 4 - Run [Ollama](ml4smells-llm-integrator/src/app/application/dtos/llm_ollama_models.py) with the models you intend to use
 * 5 - Run `python main.py`
 
 
@@ -182,5 +182,4 @@ This repository provides the artifacts associated with the paper, including the 
 
 # License
 
-This project is licensed under the MIT License.
-Feel free to use, modify, and distribute it as permitted under the terms of this license.
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as permitted under the terms of this license.
