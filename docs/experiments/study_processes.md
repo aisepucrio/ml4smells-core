@@ -53,4 +53,4 @@ This folder contains the files extracted from `code_smells.db` with the aim of a
 
 ## Artifacts
 
-[Zenodo](https://zenodo.org/records/16014788)
+[Zenodo](https://zenodo.org/records/16315128)
