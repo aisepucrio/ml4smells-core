@@ -175,10 +175,10 @@ Each subsection explains the purpose of the files, how they contribute to the wo
 This repository provides the artifacts associated with the paper, including the code used to extract the algorithms analyzed by PySmell, validating their correctness; the datasets containing the classified code samples; and the models employed in the experiments, with the aim of supporting result reproducibility and fostering further research. [Zenodo](https://zenodo.org/records/16315128)
 
 
-
+<!-- 
 # Article
 
-[📄 Link to the Article]()
+[📄 Link to the Article]() -->
 
 
 # License
