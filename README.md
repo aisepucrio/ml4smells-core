@@ -2,9 +2,25 @@
     <h1>Code Smell Classification in Python: </br> Are Small Language Models Up to the Task?</h2>
 </div>
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16315128.svg)](https://doi.org/10.5281/zenodo.16315128)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16707253.svg)](https://doi.org/10.5281/zenodo.16707253)
 
-The pre-print for the paper is available [here](paper/code_smell_slm_python_2025.pdf)
+
+The pre-print for the paper is available [here](paper)
+
+# Citation
+
+```bibtex
+@Inproceedings{soares_de_oliveira2025:SBES,
+  author = {Soares de Oliveira, Igor and Carneiro, Joanne and Ribas, Jessica and Pereira, Juliana Alves},
+  title     = {Code Smell Classification in Python: Are Small Language Models Up to the Task?},
+  year      = {2025},
+  pages     = {1–7},
+  booktitle = {Brazilian Symposium on Software Engineering, Insightful Ideas and Emerging Results Track (SBES IIER)},  
+  publisher = {SOL}
+}
+```
+
+
 # Code-smell-analysis
 
 The application serves as a front-end interface, allowing users to submit code for processing and extraction. It also provides the option to specify additional details, such as the prompt that will help the SLM interpret the context or intended query, the selection of the SLM to be used during processing, and the definition of the extraction type, whether for classes or methods. Furthermore, the application informs the user when processing begins, ensuring clarity and ease of use throughout the execution of the task.
@@ -21,14 +37,14 @@ The application serves as a front-end interface, allowing users to submit code f
 
 ## Dependencies
 
-* ml4smells-code-extractor.API
+* lm4smells-code-extractor.API
 
 ----------
 </br>
 
-# Ml4smells-code-extractor.API
+# lm4smells-code-extractor.API
 
-The application operates within an anti-corruption layer (ACL), acting as an event producer. Its main responsibility is to receive requests from the frontend service, process them, and extract relevant information, such as the classes or methods present in the submitted files. This functionality enables the identification of classes and methods, along with their respective properties. To achieve this, the application uses the Abstract Syntax Tree (AST) technique, which provides a structural representation of the input code. After extracting the information, the application sends an event to the router, allowing the ml4smells-llm-integrator service to consume it.
+The application operates within an anti-corruption layer (ACL), acting as an event producer. Its main responsibility is to receive requests from the frontend service, process them, and extract relevant information, such as the classes or methods present in the submitted files. This functionality enables the identification of classes and methods, along with their respective properties. To achieve this, the application uses the Abstract Syntax Tree (AST) technique, which provides a structural representation of the input code. After extracting the information, the application sends an event to the router, allowing the lm4smells-lm-integrator service to consume it.
 
 
 ## Built with
@@ -39,7 +55,7 @@ The application operates within an anti-corruption layer (ACL), acting as an eve
 ## Project Structure
 
 ```
-├──📁 ml4smells-code-extractor.API
+├──📁 lm4smells-code-extractor.API
 │   ├──📁 docs
 │   ├──📁 src
 │   |   ├──📁 app
@@ -62,12 +78,12 @@ The application operates within an anti-corruption layer (ACL), acting as an eve
 ## Dependencies
 
 * RabbitMq
-* ml4smells-llm-integrator
+* lm4smells-lm-integrator
 
 ----------
 </br>
 
-# Ml4smells-llm-integrator
+# lm4smells-lm-integrator
 
 The main objective of this application is to act as an event consumer, receiving messages from the router and processing them according to the attributes defined in the event payload. To perform this processing, the application interacts with SLMs, either through an instance of Ollama or via RESTful protocols. After the processing is completed and the operational data is obtained, the results are stored in a relational database, ensuring their availability for data analysis and future research.
 
@@ -81,7 +97,7 @@ The main objective of this application is to act as an event consumer, receiving
 ## Project Structure
 
 ```
-├──📁 ml4smells-llm-integrator
+├──📁 lm4smells-lm-integrator
 │   ├──📁 docs
 │   ├──📁 src
 │   |   ├──📁 app
@@ -98,7 +114,7 @@ The main objective of this application is to act as an event consumer, receiving
 * 1 - Make sure you are in the `app` folder
 * 2 - Run `pip install -r requirements.txt`
 * 3 - Set up [RabbitMQ](https://www.rabbitmq.com/docs/download) according to the `.env` file
-* 4 - Run [Ollama](ml4smells-llm-integrator/src/app/application/dtos/llm_ollama_models.py) with the models you intend to use
+* 4 - Run [Ollama](lm4smells-lm-integrator/src/app/application/dtos/slm_ollama_models.py) with the models you intend to use
 * 5 - Run `python main.py`
 
 
@@ -172,7 +188,7 @@ Each subsection explains the purpose of the files, how they contribute to the wo
 # Artifacts
 
 
-This repository provides the artifacts associated with the paper, including the code used to extract the algorithms analyzed by PySmell, validating their correctness; the datasets containing the classified code samples; and the models employed in the experiments, with the aim of supporting result reproducibility and fostering further research. [Zenodo](https://zenodo.org/records/16315128)
+This repository provides the artifacts associated with the paper, including the code used to extract the algorithms analyzed by PySmell, validating their correctness; the datasets containing the classified code samples; and the models employed in the experiments, with the aim of supporting result reproducibility and fostering further research. [Zenodo](https://zenodo.org/records/16707253)
 
 
 <!-- 
